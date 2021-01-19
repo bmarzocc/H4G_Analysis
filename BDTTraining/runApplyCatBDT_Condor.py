@@ -88,19 +88,19 @@ SYSTEMATICS=$3;
 YEAR=$4;
 WEIGHT=$5;
 OUTPUT=$6;
-python /afs/cern.ch/work/t/twamorka/flashgg_16aug2020/CMSSW_10_6_8/src/flashgg/Scripts/ApplyTraining/ApplyCatBDT.py ${INPUTFILE} ${MASS} ${SYSTEMATICS} ${YEAR} ${WEIGHT} ${OUTPUT}
+python ApplyCatBDT.py ${INPUTFILE} ${MASS} ${SYSTEMATICS} ${YEAR} ${WEIGHT} ${OUTPUT}
 echo -e "DONE";
 '''
   arguments=[]
-  
-  
+
+
   year = [2016, 2017, 2018]
   mass = [60, 55, 50, 45, 40, 30, 25, 20, 15]
   doSystematics = 1
   weightFile = '/eos/user/b/bmarzocc/H4G/dataset_PhoMVA_manyKinVars_aMass_fullRun2_DataMix_HighStat_kinWeight_dataSBScaling_MGPodd_bkgData_m'
   outDir = '/eos/user/t/twamorka/h4g_fullRun2/TrainingApplied_22Dec2020/dataset_PhoMVA_manyKinVars_aMass_fullRun2_DataMix_HighStat_kinWeight_dataSBScaling_MGPodd_bkgData/'
   inputfile_signal = '/eos/user/t/twamorka/H4G_SignalSamples_MGP/'
-  inputfile_data = '/eos/user/t/twamorka/h4g_fullRun2/withSystematics/' 
+  inputfile_data = '/eos/user/t/twamorka/h4g_fullRun2/withSystematics/'
   inputfile_bkg = '/eos/user/t/twamorka/h4g_fullRun2/withSystematics/DataMix_HighStat/hadd/'
   files = ['even','odd']
   for m in mass:
