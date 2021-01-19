@@ -3,6 +3,6 @@ A full run2 per mass point training is performed. The signal and datamix samples
 ** Evaluation of BDT
 
 #+BEGIN_EXAMPLE
-Change the weight file and the input, output directories [here] (https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/runApplyCatBDT_Condor.py#L100-#L104).
+Change the weight file and the input, output directories [[here] [https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/runApplyCatBDT_Condor.py#L100-#L104]].
 
 #+END_EXAMPLE
