@@ -1,9 +1,10 @@
 * BDT Training
 A full run2 per mass point training is performed. The signal and datamix samples are split into odd and even events. Training is performed using odd events and evaluated on even events.
 ** Evaluation of BDT
-Change the weight file and the input, output directories [[https://cms-analysis.github.io/flashgg/][here]]
+Change the weight file and the input, output directories [[https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/runApplyCatBDT_Condor.py#L100-#L104][here]]. Then run the following steps:
 #+BEGIN_EXAMPLE
-Change the weight file and the input, output directories [[https://cms-analysis.github.io/flashgg/][here]]
- [[here] [https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/runApplyCatBDT_Condor.py#L100-#L104]].
-
+voms-proxy-init --voms cms --valid 168:00
+python runApplyCatBDT_Condor.py
+After checking that the arguments.txt and run_scripts.sh make sense, you are ready to launch condor jobs.
+condor_submit condor_job.txt
 #+END_EXAMPLE
