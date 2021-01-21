@@ -1,10 +1,13 @@
 * H4G_Analysis
 
 ** Analysis setup
-Flashgg Tagger: [[https://github.com/wamorkart/flashgg/tree/h4g_withPreFireWeightApplied][Link]]
-Flashgg FinalFit: [[https://github.com/wamorkart/flashggFinalFit/tree/h4g_fullrunII_2020][Link]]
+   - Flashgg Tagger: [[https://github.com/wamorkart/flashgg/tree/h4g_withPreFireWeightApplied][Link]]
+   - Flashgg FinalFit: [[https://github.com/wamorkart/flashggFinalFit/tree/h4g_fullrunII_2020][Link]AN twiki: [[https://twiki.cern.ch/twiki/bin/view/CMS/AN18017][Link]]
+   - AN twiki: [[https://twiki.cern.ch/twiki/bin/view/CMS/AN18017][Link]]
 
-AN twiki: [[https://twiki.cern.ch/twiki/bin/view/CMS/AN18017][Link]]
+** Signal Samples
+   - MiniAOD
+     -- [[https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fglobal&input=%2FHAHMHToAA_AToGG_MA-*GeV_TuneCUETP8M1_PSweights_13TeV-madgraph_pythia8%2FRunIISummer16MiniAODv3-94X_mcRun2_asymptotic_v3-v1%2FMINIAODSIM][2016 Link]]
 ** Samples
 
 #+BEGIN_EXAMPLE
