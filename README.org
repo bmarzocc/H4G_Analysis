@@ -16,3 +16,7 @@ Data samples (2018): /eos/user/t/twamorka/h4g_fullRun2/withSystematics/2018/hadd
 Background MC samples (All 3 years): /eos/user/t/twamorka/H4G_BkgMC/
 #+END_EXAMPLE
 
+
+** Useful links
+
+Systematic weight plots: [[https://twamorka.web.cern.ch/fggWeightsCheck/][Link]]
