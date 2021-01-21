@@ -2,10 +2,16 @@
 A full run2 per mass point training is performed. The signal and datamix samples are split into odd and even events. Training is performed using odd events and evaluated on even events.
 
 ** Splitting of events
-The splitting is done via [[https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/SplitEvents/split_Tree.py][this]] script.
-It is faster to submit jobs on condor. That can be done via [[https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/SplitEvents/split_Tree_Condor.py][this]] script.
+The splitting is done via [[https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/SplitEvents/split_Tree.py][this]] script. It can be run locally this way:
 #+BEGIN_EXAMPLE
-This script can be run locally: python split_Tree.py -i input_file.root -d tagsDumper/trees
+python split_Tree.py -i input_file.root -d tagsDumper/trees
+#+END_EXAMPLE
+
+When running over multiple files, it is faster to submit jobs on condor. That can be done via [[https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/SplitEvents/split_Tree_Condor.py][this]] script.
+#+BEGIN_EXAMPLE
+voms-proxy-init --voms cms --valid 168:00
+python split_Tree_Condor.py -i /eos/user/t/twamorka/H4G_Signal_Campaign_18Jan2021/2018/hadd/
+condor_submit condor_job.txt
 #+END_EXAMPLE
 
 ** Evaluation of BDT
