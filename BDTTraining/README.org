@@ -1,5 +1,13 @@
 * BDT Training
 A full run2 per mass point training is performed. The signal and datamix samples are split into odd and even events. Training is performed using odd events and evaluated on even events.
+
+** Splitting of events
+#+BEGIN_EXAMPLE
+The splitting is done via [[https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/SplitEvents/split_Tree.py][this]] script. 
+This script can be run locally: python split_Tree.py -i input_file.root -d tagsDumper/trees
+It is faster to submit jobs on condor. That can be done via [[https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/SplitEvents/split_Tree_Condor.py][this]] script.
+#+END_EXAMPLE
+
 ** Evaluation of BDT
 Change the weight file and the input, output directories [[https://github.com/wamorkart/H4G_Analysis/blob/main/BDTTraining/runApplyCatBDT_Condor.py#L100-#L104][here]]. Then run the following steps:
 #+BEGIN_EXAMPLE

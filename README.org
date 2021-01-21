@@ -16,25 +16,3 @@ Data samples (2018): /eos/user/t/twamorka/h4g_fullRun2/withSystematics/2018/hadd
 Background MC samples (All 3 years): /eos/user/t/twamorka/H4G_BkgMC/
 #+END_EXAMPLE
 
-** Categorization training (Per mass point full Run2 training)
-#+BEGIN_EXAMPLE
-Signal and background ntuples are split into even and odd events. Ntuples containing the odd events are used for training and even events are used for evaluating the BDT and for signal modeling.
-
-The splitting is done via script:
-
-The samples used in training are:
-
-Signal samples (2016): /eos/user/t/twamorka/H4G_Signal_Campaign_18Jan2021/2016/hadd/
-Signal samples (2017): /eos/user/t/twamorka/H4G_Signal_Campaign_18Jan2021/2016/hadd/
-Signal samples (2018): /eos/user/t/twamorka/H4G_Signal_Campaign_18Jan2021/2016/hadd/
-
-DataMix samples (2016):
-DataMix samples (2017):
-DataMix samples (2018):
-
-
-The script used for training:
-
-Script used for evaluation of BDT:
-
-#+END_EXAMPLE
