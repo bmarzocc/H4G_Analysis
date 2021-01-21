@@ -8,7 +8,14 @@
 ** Signal Samples
    - MiniAOD
      - [[https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fglobal&input=%2FHAHMHToAA_AToGG_MA-*GeV_TuneCUETP8M1_PSweights_13TeV-madgraph_pythia8%2FRunIISummer16MiniAODv3-94X_mcRun2_asymptotic_v3-v1%2FMINIAODSIM][2016]]
-     
+     - [[https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fglobal&input=%2FHAHMHToAA_AToGG_MA-*GeV_TuneCP5_PSweights_13TeV-madgraph_pythia8%2FRunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1%2FMINIAODSIM][2017]]  
+     - [[https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fglobal&input=%2FHAHMHToAA_AToGG_MA-*GeV_TuneCP5_PSweights_13TeV-madgraph_pythia8%2FRunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v2%2FMINIAODSIM][2018]]   
+
+   - MicroAOD
+     - [[https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fphys03&input=%2FHAHMHToAA_AToGG_MA-*GeV_TuneCUETP8M1_PSweights_13TeV-madgraph_pythia8%2Flata-Era2016_RR-17Jul2018_v2-v2_p12-v0-RunIISummer16MiniAODv3-558f94a366de3fc00ec9d9ea7e93aa72%2FUSER][2016]]
+     - [[https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fphys03&input=%2FHAHMHToAA_AToGG_MA-*GeV_TuneCP5_PSweights_13TeV-madgraph_pythia8%2Flata-Era2017_RR-31Mar2018_v2-v2_p11-v0-RunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1-6f64939368112792100a27fcb8918a00%2FUSER][2017]]
+     - [[2018: https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fphys03&input=%2FHAHMHToAA_AToGG_MA-*GeV_TuneCP5_PSweights_13TeV-madgraph_pythia8%2Flata-Era2018_RR-17Sep2018_v2-v2_p12-v0-RunIIAutumn18MiniAOD-102X_upgrade2018_realistic_v15-v2-c8742baf38d1e270734b273d38e0b81b%2FUSER][2018]]  
+  
 ** Samples
 
 #+BEGIN_EXAMPLE
