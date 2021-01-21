@@ -28,7 +28,6 @@ if __name__ == '__main__':
    dir2 = dir1.Get("trees") 
    for key in dir2.GetListOfKeys():
     tree = inFile.Get(dir+"/"+key.GetName())
-    print str(dir2)+"/"+key.GetName()
     outtree_even = tree.CloneTree(0)
     nentries = tree.GetEntries()
     for i in range(0, nentries):
