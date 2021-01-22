@@ -1,4 +1,4 @@
-* H4G_Analysis
+* H4G Full Run2 Analysis
 
 ** Analysis setup
    - Flashgg Tagger: [[https://github.com/wamorkart/flashgg/tree/h4g_withPreFireWeightApplied][Link]]
@@ -36,3 +36,5 @@ Background MC samples (All 3 years): /eos/user/t/twamorka/H4G_BkgMC/
 ** Useful links
 
 Systematic weight plots: [[https://twamorka.web.cern.ch/fggWeightsCheck/][Link]]
+Categorization training TMVA plots:
+- [[https://bmarzocc.web.cern.ch/bmarzocc/H4G_PhoMVA_manyKinVars_aMass_fullRun2_DataMix_HighStat_kinWeight_dataSBScaling_MGPodd_bkgOdd_m60_newSignalWeights/][m(a) = 60 GeV]]
