@@ -5,7 +5,9 @@
 ## Before doing anything, you must first go to a CMSSW release where you have Higgs Combine setup and do a cmsenv. This is essential to do so that you can use scripts that are needed in the subsequent steps.
 
 # Step 1: It is suggested to make a separate datacard for each category separately. This is because the background modeling is independent in each category. To make a datacard with only one category from the combined datacard:
-#combineCards.py --ic=catA Datacard.txt > Datacard_catA.txt (where Datacard.txt is your datacard with multiple categories, and catA is the category for which you want to create a separate datacard.) This step is not part of the scripts below since H4G datacards only have category to begin with. If your datacards have multiple categories, then you should do this step for each category.
+#combineCards.py --ic=catA Datacard.txt > Datacard_catA.txt (where Datacard.txt is your datacard with multiple categories, and catA is the category for which you want to create a separate datacard.)
+#This step is not part of the scripts below since H4G datacards only have category to begin with. 
+#If your datacards have multiple categories, then you should do this step for each category.
 #
 #########################################################################################
 
