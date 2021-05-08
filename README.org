@@ -1,6 +1,13 @@
 * H4G Full Run2 Analysis (HIG-21-003)
 
-Welcome to the Full Run 2 Resolved h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma analysis
+Welcome to the Full Run 2 Resolved h \rightarrow aa \rightarrow \gamma \gamma \gamma \gamma analysis
+
+** Important Links
+
+   - CADI: [[https://cms.cern.ch/iCMS/analysisadmin/cadilines?line=HIG-21-003&tp=an&id=2416&ancode=HIG-21-003][Link]]
+   - AN GitLab: [[https://gitlab.cern.ch/cms-hgg/AN-18-017][Link]]
+   - Paper GitLab: [[https://gitlab.cern.ch/tdr/papers/HIG-21-003][Link]]
+   - Datacards GitLab: [[https://gitlab.cern.ch/cms-hcg/cadi/hig-21-003][Link]]
 
 ** Analysis setup
    - Flashgg Tagger: [[https://github.com/wamorkart/flashgg/tree/h4g_withPreFireWeightApplied][Link]]
