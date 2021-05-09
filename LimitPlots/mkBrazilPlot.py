@@ -89,10 +89,10 @@ if (norm==1):
     plt.ticklabel_format(axis='y',style='sci',scilimits=(0,4))
     plt.title(r'$\bf{CMS}$'+' $\it{'+str(label_left)+'}$',position=(0.15, 0.93)) ## Put CMS Preliminary inside the canvas; position=(0,0) is the bottom left and position=(1,1) is the top right
     # plt.ylabel(r'$\dfrac {\sigma (pp\rightarrow h)} {\sigma (SM)}\times BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) $',labelpad=0.1) ## labelpad determines the distance between label axis and label values; a higher value will increase the distance
-    plt.ylabel(r'$\sigma (pp\rightarrow h)\times BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) / \sigma_{SM}$',labelpad=0.1) ## labelpad determines the distance between label axis and label values; a higher value will increase the distance
+    plt.ylabel(r'$\sigma (pp\rightarrow h)\times BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) / \sigma_{SM}$',y=1, ha='right') ## labelpad determines the distance between label axis and label values; a higher value will increase the distance
 else:
     plt.title(r'$\bf{CMS}$'+' $\it{'+str(label_left)+'}$',loc='left')    ## Put CMS Preliminary outside the canvas
-    plt.ylabel(r'$\sigma (pp\rightarrow h)\times BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) \quad[fb] $',labelpad=2)
+    plt.ylabel(r'$\sigma (pp\rightarrow h)\times BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) \quad[fb] $',y=1, ha='right')
 
 # plt.ylabel(labelpad=10)
 # plt.ticklabel_format(axis='y',style='sci',scilimits=(0,4))
@@ -112,7 +112,7 @@ plt.fill_between(mass,exp_median , exp_up01sigma,facecolor='#00CC00',lw=0)
 plt.fill_between(mass,exp_up01sigma , exp_up02sigma,facecolor='#FFCC01',lw=0)
 
 
-plt.xlabel('m(a) [GeV]')
+plt.xlabel('m(a) [GeV]',x=1, ha='right')
 plt.legend(loc='upper right',framealpha=0)
 # plt.tight_layout()
 
