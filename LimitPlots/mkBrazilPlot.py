@@ -9,6 +9,8 @@ parser =  argparse.ArgumentParser(description='H4G Brazil Plot Maker')
 parser.add_argument('-s','--style',dest='style',required=True,type=str)
 parser.add_argument('-b','--blind',dest='blind',required=True,type=int)
 parser.add_argument('-norm','--norm',dest='norm',required=True,type=int)
+parser.add_argument('-ymin','--ymin',dest='ymin',required=False,default=0,type=float)
+parser.add_argument('-ymax','--ymax',dest='ymax',required=False,default=4,type=float)
 parser.add_argument('-iD','--inDir',dest='inDir',required=True,type=str)
 parser.add_argument('-oD','--oDir',dest='oDir',required=True,type=str)
 parser.add_argument('-n','--name',dest='name',required=True,type=str)
@@ -17,9 +19,12 @@ opt = parser.parse_args()
 style = opt.style
 blind = opt.blind
 norm = opt.norm
+ymin = opt.ymin
+ymax = opt.ymax
 inDir = opt.inDir
 oDir = opt.oDir
 name = opt.name
+
 
 if (norm==0): ## if limits are to be presented in form of XS (pp->h) * BR (h->aa->gggg)
     norm_factor = 1
@@ -71,14 +76,11 @@ for m in range (15,61): ## m(a) ranges from 15 to 60 GeV
             limit_obs = tree2array(tree_in_obs,branches="limit")
             obs.append(limit_obs[0]/norm_factor)
 
-# print mass
-# print exp_median
-# print obs
 
 ## Make Brazil Plot
-# plt.ylim(0,4)
-#plt.xlim(14.9,60.1)
-plt.grid(True)
+plt.ylim(ymin,ymax)
+plt.xlim(14.9,60.1)
+# plt.grid(True)
 
 plt.plot(mass, exp_median,lineStyle='--', marker='',color='black',label='Median expected')
 plt.plot(mass, exp_down01sigma,lineStyle='-', marker='',color='yellowgreen',label=r'$ \pm 1\sigma$ expected')
@@ -96,10 +98,11 @@ else:
     plt.ylabel(r'$\dfrac {\sigma (pp\rightarrow h)} {\sigma (SM)}  \quad X \quad  BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) $')
     plt.yscale("logit")
 plt.xlabel('m(a) [GeV]')
-plt.legend()
+plt.legend(loc='upper right',framealpha=0)
 # plt.tight_layout()
 plt.title(r'$\bf{CMS}$'+' $\it{Preliminary}$',loc='left')
-plt.title('Run 2 (13 TeV)',loc='right')
+# plt.title('Run 2 (13 TeV)',loc='right')
+plt.title(r'132 $fb^{-1}$  (13 TeV)',loc='right')
 
 plt.savefig(oDir+name+'.pdf')
 plt.savefig(oDir+name+'.png')
