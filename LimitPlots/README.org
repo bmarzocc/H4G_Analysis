@@ -11,7 +11,7 @@ eg: python mkBrazilPlot.py -s HybridNew -b 0 -norm 0 -iD Limit_RootFiles/Asympto
 
 where,
 
-style = "Asymtotic" for combine asymptotic limit or "HybridNew" for combine hybridnew limit
+style = "Asymptotic" for combine asymptotic limit or "HybridNew" for combine hybridnew limit
 
 blind = 0 for unblinded limits, = 1 for blind limits
 
@@ -26,5 +26,19 @@ name = Output file name, for eg: name="Limit_HybridNew_Unblind"
 ymin = minimum y axis value
 
 ymax = maximum y axis value
+
+#+END_EXAMPLE
+
+Example commands:
+
+#+BEGIN_EXAMPLE
+
+HybridNew  (XS (pp->h) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py -s HybridNew -b 0 -norm 0 -iD Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/ -n HybridNew_Unblind_XSTimesBR -ymin 0 -ymax 4
+
+HybridNew (XS (pp->h) / XS (SM) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py -s HybridNew -b 0 -norm 1 -iD Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/ -n HybridNew_Unblind_XSTimesBR_Over_SMXS -ymin 1e-6 -ymax 7e-5
+
+Asymptotic (XS (pp->h) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py -s Asymptotic -b 0 -norm 0 -iD Limit_RootFiles/Asymptotic/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/ -n Asymptotic_Unblind_XSTimesBR -ymin 0 -ymax 4
+
+Asymptotic (XS (pp->h) / XS (SM) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py -s Asymptotic -b 0 -norm 1 -iD Limit_RootFiles/Asymptotic/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/ -n Asymptotic_Unblind_XSTimesBR_Over_SMXS -ymin 1e-6 -ymax 7e-5
 
 #+END_EXAMPLE

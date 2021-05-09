@@ -25,6 +25,8 @@ inDir = opt.inDir
 oDir = opt.oDir
 name = opt.name
 
+label_left = "Preliminary" ## set the label to be displayed after "CMS"
+label_right = "132 $fb^{-1}$  (13 TeV)"
 
 if (norm==0): ## if limits are to be presented in form of XS (pp->h) * BR (h->aa->gggg)
     norm_factor = 1
@@ -79,7 +81,20 @@ for m in range (15,61): ## m(a) ranges from 15 to 60 GeV
 
 ## Make Brazil Plot
 plt.ylim(ymin,ymax)
+if (norm==1):
+    plt.ticklabel_format(axis='y',style='sci',scilimits=(0,4))
+    plt.title(r'$\bf{CMS}$'+' $\it{'+str(label_left)+'}$',position=(0.15, 0.93)) ## Put CMS Preliminary inside the canvas; position=(0,0) is the bottom left and position=(1,1) is the top right
+    plt.ylabel(r'$\dfrac {\sigma (pp\rightarrow h)} {\sigma (SM)}  \quad X \quad  BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) $',labelpad=2) ## labelpad determines the distance between label axis and label values; a higher value will increase the distance
+else:
+    plt.title(r'$\bf{CMS}$'+' $\it{'+str(label_left)+'}$',loc='left')    ## Put CMS Preliminary outside the canvas
+    plt.ylabel(r'$\sigma (pp\rightarrow h)  \quad X \quad  BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) \quad [fb] $',labelpad=2)
+
+# plt.ylabel(labelpad=10)
+# plt.ticklabel_format(axis='y',style='sci',scilimits=(0,4))
+# plt.ylim(style="sci")
 plt.xlim(14.9,60.1)
+plt.xticks([15,20,25,30,35,40,45,50,55,60])
+
 # plt.grid(True)
 
 plt.plot(mass, exp_median,lineStyle='--', marker='',color='black',label='Median expected')
@@ -93,16 +108,24 @@ if (blind==0): plt.plot(mass, obs,lineStyle='-', marker='',color='black',label='
 plt.fill_between(mass,exp_down02sigma , exp_up02sigma,facecolor='yellow')
 plt.fill_between(mass,exp_down01sigma , exp_up01sigma,facecolor='yellowgreen')
 
-if (norm==0): plt.ylabel(r'$\sigma (pp\rightarrow h)  \quad X \quad  BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) \quad [fb] $')
-else:
-    plt.ylabel(r'$\dfrac {\sigma (pp\rightarrow h)} {\sigma (SM)}  \quad X \quad  BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma) $')
-    plt.yscale("logit")
+# if (norm==0):
+# else:
+
+    # plt.yscale("logit")
 plt.xlabel('m(a) [GeV]')
 plt.legend(loc='upper right',framealpha=0)
 # plt.tight_layout()
-plt.title(r'$\bf{CMS}$'+' $\it{Preliminary}$',loc='left')
+
+
 # plt.title('Run 2 (13 TeV)',loc='right')
-plt.title(r'132 $fb^{-1}$  (13 TeV)',loc='right')
+plt.title(str(label_right),loc='right')
 
 plt.savefig(oDir+name+'.pdf')
 plt.savefig(oDir+name+'.png')
+
+plt.yscale("log")
+if (norm==0): plt.ylim(0,10)
+else: plt.ylim(1e-6,1e-3)
+
+plt.savefig(oDir+name+'_log.pdf')
+plt.savefig(oDir+name+'_log.png')
