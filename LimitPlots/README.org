@@ -40,9 +40,9 @@ Example commands:
 
 #+BEGIN_EXAMPLE
 
-HybridNew  (XS (pp->h) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py -s HybridNew -b 0 -norm 0 -iD/eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/ -n HybridNew_Unblind_XSTimesBR -ymin 0 -ymax 4
+HybridNew  (XS (pp->h) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py -s HybridNew -b 0 -norm 0 -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/ -n HybridNew_Unblind_XSTimesBR -ymin 0 -ymax 4
 
-HybridNew (XS (pp->h) / XS (SM) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py -s HybridNew -b 0 -norm 1 -iD/eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/ -n HybridNew_Unblind_XSTimesBR_Over_SMXS -ymin 1e-6 -ymax 7e-5
+HybridNew (XS (pp->h) / XS (SM) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py -s HybridNew -b 0 -norm 1 -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/ -n HybridNew_Unblind_XSTimesBR_Over_SMXS -ymin 1e-6 -ymax 7e-5
 
 Asymptotic (XS (pp->h) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py -s Asymptotic -b 0 -norm 0 -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/Asymptotic/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/ -n Asymptotic_Unblind_XSTimesBR -ymin 0 -ymax 4
 
