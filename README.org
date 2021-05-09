@@ -1,6 +1,6 @@
 * H4G Full Run2 Analysis (HIG-21-003)
 
-Welcome to the Full Run 2 Resolved h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma analysis
+Welcome to the Full Run 2 Resolved h \rightarrow aa \rightarrow \gamma \gamma \gamma \gamma analysis
 
 ** Important Links
 
