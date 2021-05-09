@@ -10,13 +10,21 @@ python mkBrazilPlot.py -s <style> -b <blind> -norm <norm> -iD <inDir> -oD <outDi
 eg: python mkBrazilPlot.py -s HybridNew -b 0 -norm 0 -iD Limit_RootFiles/Asymptotic/ -oD /eos/user/t/twamorka/www/H4G_Review/ -n Limit_HybridNew_Unblind -ymin 0 -ymax 4
 
 where,
+
 style = "Asymtotic" for combine asymptotic limit or "HybridNew" for combine hybridnew limit
+
 blind = 0 for unblinded limits, = 1 for blind limits
+
 norm = 0 for limits on XS (pp->h) * BR (h->aa-> 4gamma), and = 1 for limits on XS (pp->h) / XS (SM) * BR (h->aa-> 4gamma)
+
 inDir = Input directory where limit root files are stored. For Asymptotic limits, set "inDir=/eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/Asymptotic/", and for HybridNew set "inDir=/eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/"
+
 outDir = Output directory, for eg: outDir = "/eos/user/t/twamorka/www/H4G_Review/"
+
 name = Output file name, for eg: name="Limit_HybridNew_Unblind"
+
 ymin = minimum y axis value
+
 ymax = maximum y axis value
 
 #+END_EXAMPLE
