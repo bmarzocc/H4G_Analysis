@@ -56,7 +56,7 @@ Asymptotic (XS (pp->h) / XS (SM) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py 
    - Summary plots from CMS: [[https://twiki.cern.ch/twiki/bin/view/CMSPublic/Summary2HDMSRun2][Link]]
    - Summary plots from ATLAS: [[https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2021-008/][Link]]
    - Theoretical values of branching ratios are here: [[https://github.com/wamorkart/H4G_Analysis/tree/main/LimitPlots/BR][Link]], and these values are obtained from the theorists via this twiki page: [[https://twiki.cern.ch/twiki/bin/view/CMS/HaaInterpretations][Link]]
-Make \frac {\sigma (pp \rightarrow hh)} {\sigma_{SM}} BR(h \rightarrow aa) versus m(a) limit plots:
+Make \sigma (pp \rightarrow hh) / \sigma_{SM} BR(h \rightarrow aa) versus m(a) limit plots:
 #+BEGIN_EXAMPLE
 python mk2HDMPlots.py -t <type> -b <beta_value> -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/  -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/
 
@@ -73,5 +73,5 @@ Example command:
 #+BEGIN_EXAMPLE
 Type I: python mk2HDMPlots.py -t I -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/
 
-Type II, Tan Beta 0.5: python mk2HDMPlots.py -t II -b 0.5 -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/ 
+Type II, Tan Beta 0.5: python mk2HDMPlots.py -t II -b 0.5 -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/
 #+END_EXAMPLE
