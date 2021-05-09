@@ -52,7 +52,7 @@ Asymptotic (XS (pp->h) / XS (SM) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py 
 
 
 ** 2HDM+S limit plots
-   - Details of the 2HDM+S models can be found here: [[https://arxiv.org/abs/1312.4992][Link]]
+   - Theoretical Details of the 2HDM+S models can be found here: [[https://arxiv.org/abs/1312.4992][Link]]
    - Summary plots from CMS: [[https://twiki.cern.ch/twiki/bin/view/CMSPublic/Summary2HDMSRun2][Link]]
    - Summary plots from ATLAS: [[https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2021-008/][Link]]
    - Theoretical values of branching ratios are here: [[https://github.com/wamorkart/H4G_Analysis/tree/main/LimitPlots/BR][Link]], and these values are obtained from the theorists via this twiki page: [[https://twiki.cern.ch/twiki/bin/view/CMS/HaaInterpretations][Link]]
