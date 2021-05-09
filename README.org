@@ -16,12 +16,10 @@ Welcome to the Full Run 2 Resolved h \rightarrow aa \rightarrow \gamma \gamma \g
    - AN twiki: [[https://twiki.cern.ch/twiki/bin/view/CMS/AN18017][Link]]
 
 
-** Root files containing limit values can be found here
-#+BEGIN_EXAMPLE
-Asymptotic limits: /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/Asymptotic/
-Hybrid New: /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/
-#+END_EXAMPLE
-** Signal Samples
+** Limit plots
+    - Scripts for making limit plots and the corresponding documentation can be found here: [[https://github.com/wamorkart/H4G_Analysis/tree/main/LimitPlots][Link]]
+
+** Signal Samples (DAS links)
    - MiniAOD
      - [[https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fglobal&input=%2FHAHMHToAA_AToGG_MA-*GeV_TuneCUETP8M1_PSweights_13TeV-madgraph_pythia8%2FRunIISummer16MiniAODv3-94X_mcRun2_asymptotic_v3-v1%2FMINIAODSIM][2016]]
      - [[https://cmsweb.cern.ch/das/request?view=list&limit=50&instance=prod%2Fglobal&input=%2FHAHMHToAA_AToGG_MA-*GeV_TuneCP5_PSweights_13TeV-madgraph_pythia8%2FRunIIFall17MiniAODv2-PU2017_12Apr2018_94X_mc2017_realistic_v14-v1%2FMINIAODSIM][2017]]
