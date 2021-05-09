@@ -1,0 +1,10 @@
+* Limit Plots
+
+Setup environment for numpy:
+#+BEGIN_EXAMPLE
+source /cvmfs/sft.cern.ch/lcg/views/LCG_98/x86_64-centos7-gcc10-opt/setup.sh
+#+END_EXAMPLE
+** Model independent limit plots
+#+BEGIN_EXAMPLE
+python
+#+END_EXAMPLE
