@@ -12,7 +12,7 @@ eg: python mkBrazilPlot.py -s HybridNew -b 0 -norm 0 -iD Limit_RootFiles/Asympto
 where,
 style = "Asymtotic" for combine asymptotic limit or "HybridNew" for combine hybridnew limit
 blind = 0 for unblinded limits, = 1 for blind limits
-norm = 0 for limits on \sigma (pp\rightarrow h)  \quad X \quad  BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma), and = 1 for limits on \frac {\sigma (pp\rightarrow h)} {\sigma_{SM}}  \quad X \quad  BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma)
+norm = 0 for limits on $\sigma$ (pp\rightarrow h)  \quad X \quad  BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma), and = 1 for limits on \frac {\sigma (pp\rightarrow h)} {\sigma_{SM}}  \quad X \quad  BR (h \rightarrow aa \rightarrow \gamma\gamma\gamma\gamma)
 inDir = Input directory where limit root files are stored. For Asymptotic limits, set "inDir=/eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/Asymptotic/", and for HybridNew set "inDir=/eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/"
 outDir = Output directory, for eg: outDir = "/eos/user/t/twamorka/www/H4G_Review/"
 name = Output file name, for eg: name="Limit_HybridNew_Unblind"
