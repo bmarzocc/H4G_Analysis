@@ -5,6 +5,7 @@ Welcome to the Full Run 2 Resolved h \rightarrow aa \rightarrow \gamma \gamma \g
 ** Important Links
 
    - CADI: [[https://cms.cern.ch/iCMS/analysisadmin/cadilines?line=HIG-21-003&tp=an&id=2416&ancode=HIG-21-003][Link]]
+   - HIG-21-003 HN: [[https://hypernews.cern.ch/HyperNews/CMS/get/HIG-21-003.html][Link]]
    - AN GitLab: [[https://gitlab.cern.ch/cms-hgg/AN-18-017][Link]]
    - Paper GitLab: [[https://gitlab.cern.ch/tdr/papers/HIG-21-003][Link]]
    - Datacards GitLab: [[https://gitlab.cern.ch/cms-hcg/cadi/hig-21-003][Link]]
@@ -13,6 +14,11 @@ Welcome to the Full Run 2 Resolved h \rightarrow aa \rightarrow \gamma \gamma \g
    - Flashgg Tagger: [[https://github.com/wamorkart/flashgg/tree/h4g_withPreFireWeightApplied][Link]]
    - Flashgg FinalFit: [[https://github.com/wamorkart/flashggFinalFit/tree/h4g_fullrunII_2020][Link]]
    - AN twiki: [[https://twiki.cern.ch/twiki/bin/view/CMS/AN18017][Link]]
+
+
+** Root files containing limit values can be found here
+   - Asymptotic limits: /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/Asymptotic/
+   - Hybrid New: /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/
 
 ** Signal Samples
    - MiniAOD
@@ -41,6 +47,9 @@ Data samples (2018): /eos/user/t/twamorka/h4g_fullRun2/withSystematics/2018/hadd
 Background MC samples (All 3 years): /eos/user/t/twamorka/H4G_BkgMC/
 #+END_EXAMPLE
 
+** Links to important plots
+   - Impact plots: [[https://twamorka.web.cern.ch/H4G_Review/Impacts/][Link]]
+   - Limit plots: [[https://twamorka.web.cern.ch/H4G_Review/Limits/][Link]]
 
 ** Useful links
    - Systematic weight plots: [[https://twamorka.web.cern.ch/fggWeightsCheck/][Link]]
