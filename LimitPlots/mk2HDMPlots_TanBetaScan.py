@@ -37,7 +37,7 @@ for qi, q in enumerate(quantile):
 
 ## Read dat files to obtain BR values
 for t in tanbeta:
-    dat_file = "/afs/cern.ch/work/t/twamorka/H4G_Analysis/LimitPlots/BR/BR_"+str(type)+"_"+str(t)+".dat" ## Read dat file
+    dat_file = "BR/BR_"+str(type)+"_"+str(t)+".dat" ## Read dat file
     file_in = open(dat_file)
 
     lst = []
