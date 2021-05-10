@@ -84,11 +84,11 @@ Type II, Tan Beta 0.5: python mk2HDMPlots.py -t II -b 0.5 -iD /eos/user/t/torimo
 python mk2HDMPlots_TanBetaScan.py -t <type> -m <m_a> -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/
 where,
 
-set <type> equal to I, II, III or IV depending on the 2HDM+S type model you wish to study
+set <type> equal to II, III or IV depending on the 2HDM+S type model you wish to study (for Type=I, the BR values are not dependent on Tan \beta. So these plots are not to be made for Type I.
+)
 
 set <m_a> equal to the pseudoscalat mass value to be studied
 
-for Type=I, the BR values are not dependent on Tan \beta. So these plots are not to be made for Type I.
 #+END_EXAMPLE
 
 Example command:
