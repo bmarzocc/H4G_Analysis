@@ -51,7 +51,7 @@ Asymptotic (XS (pp->h) / XS (SM) * BR (h->aa-> 4gamma)): python mkBrazilPlot.py 
 #+END_EXAMPLE
 
 
-** 2HDM+S limit plots
+** 2HDM+S versus limit plots
    - Theoretical Details of the 2HDM+S models can be found here: [[https://arxiv.org/abs/1312.4992][Link]]
    - Summary plots from CMS: [[https://twiki.cern.ch/twiki/bin/view/CMSPublic/Summary2HDMSRun2][Link]]
    - Summary plots from ATLAS: [[https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-PHYS-PUB-2021-008/][Link]]
@@ -75,4 +75,25 @@ Example command:
 Type I: python mk2HDMPlots.py -t I -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/
 
 Type II, Tan Beta 0.5: python mk2HDMPlots.py -t II -b 0.5 -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/
+#+END_EXAMPLE
+
+
+- Make \sigma (pp \rightarrow hh) \times BR(h \rightarrow aa) / \sigma_{SM} versus Tan \beta limit plots for a fixed value of m(a):
+#+BEGIN_EXAMPLE
+
+python mk2HDMPlots_TanBetaScan.py -t <type> -m <m_a> -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/
+where,
+
+set <type> equal to I, II, III or IV depending on the 2HDM+S type model you wish to study
+
+set <m_a> equal to the pseudoscalat mass value to be studied
+
+for Type=I, the BR values are not dependent on Tan \beta. So these plots are not to be made for Type I.
+#+END_EXAMPLE
+
+Example command:
+#+BEGIN_EXAMPLE
+m(a) = 60 GeV and Type II: python mk2HDMPlots_TanBetaScan.py -t II -m 60 -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/
+
+m(a) = 60 GeV and Type III: python mk2HDMPlots_TanBetaScan.py -t III -m 60 -iD /eos/user/t/torimoto/H4G_Limits/H4G_Analysis_Files/Limit_RootFiles/HybridNew/ -oD /eos/user/t/twamorka/www/H4G_Review/Limits/2HDMPlusSPlots/
 #+END_EXAMPLE
