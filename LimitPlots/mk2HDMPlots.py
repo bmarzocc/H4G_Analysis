@@ -70,11 +70,11 @@ plt.ylim(0.01,1.5*max(limit_over_brsquared_arr[3]))
 plt.xlim(14.9,60.1)
 plt.xticks([15,20,25,30,35,40,45,50,55,60])
 
-plt.plot(mass, limit_over_brsquared_arr[0],lineStyle='')#,color='#67001f')
-plt.plot(mass, limit_over_brsquared_arr[1],lineStyle='--',color='#67001f')
-plt.plot(mass, limit_over_brsquared_arr[2],lineStyle='')#,color='#67001f')
+plt.plot(mass, limit_over_brsquared_arr[0],lineStyle='')#,color='#67001f') ## Down 01 sigma expected
+plt.plot(mass, limit_over_brsquared_arr[1],lineStyle='--',color='#67001f') ## Median expected
+plt.plot(mass, limit_over_brsquared_arr[2],lineStyle='')#,color='#67001f') ## Up 01 sigma expected
 
-plt.plot(mass, limit_over_brsquared_arr[3],lineStyle='',color='#67001f',alpha=0.3)
+plt.plot(mass, limit_over_brsquared_arr[3],lineStyle='',color='#67001f',alpha=0.3) ## Observed
 plt.fill_between(mass,limit_over_brsquared_arr[0],limit_over_brsquared_arr[2],lineStyle='--',facecolor="none",hatch='////',edgecolor='#67001f',lw=0,label=r'Expected exclusion 95% CL $\pm 1\sigma$')
 plt.fill_between(mass,limit_over_brsquared_arr[3],1.5*np.max(limit_over_brsquared_arr[3]),color='#67001f',alpha=0.3,lw=0,label='Observed exclusion 95% CL')
 
