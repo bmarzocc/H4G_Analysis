@@ -1,0 +1,135 @@
+{
+   "data":"data_2018.root",
+   "signal":[
+       {
+          "name":"Pseudoscalar",
+          "treeName_2018":"tagsDumper/trees/HAHMHToAA_AToGG_MA_60GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+          "legend":"m_{a} = 60 GeV",
+          "color":300,
+          "style":1,
+          "file_2018":"signal_m_60.root"
+       },
+       {
+          "name":"Pseudoscalar",
+          "treeName_2018":"tagsDumper/trees/HAHMHToAA_AToGG_MA_40GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+          "legend":"m_{a} = 40 GeV",
+          "color":300,
+          "style":1,
+          "file_2018":"signal_m_40.root"
+       },
+       {
+          "name":"Pseudoscalar",
+          "treeName_2018":"tagsDumper/trees/HAHMHToAA_AToGG_MA_30GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+          "legend":"m_{a} = 30 GeV",
+          "color":300,
+          "style":1,
+          "file_2018":"signal_m_30.root"
+       },
+       {
+          "name":"Pseudoscalar",
+          "treeName_2018":"tagsDumper/trees/HAHMHToAA_AToGG_MA_15GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+          "legend":"m_{a} = 15 GeV",
+          "color":300,
+          "style":1,
+          "file_2018":"signal_m_15.root"
+       }
+
+
+   ],
+
+   "background":{
+     "Jet-Jet":{
+                "position":1,
+                "legend":"QCD",
+                "color":"#2B74BA",
+                "files":[
+                   {
+                      "file":"QCD_30to40_2018.root",
+                      "treeName":"QCD_Pt_30to40_DoubleEMEnriched_MGG_80toInf_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+                      "cut" : "(pho1_genType!=1 && pho2_genType!=1)"
+                   },
+                   {
+                      "file":"QCD_30toInf_2018.root",
+                      "treeName":"QCD_Pt_30toInf_DoubleEMEnriched_MGG_40to80_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+                      "cut" : "(pho1_genType!=1 && pho2_genType!=1)"
+                   },
+                   {
+                      "file":"QCD_40toInf_2018.root",
+                      "treeName":"QCD_Pt_40toInf_DoubleEMEnriched_MGG_80toInf_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+                      "cut" : "(pho1_genType!=1 && pho2_genType!=1)"
+                   },
+                   {
+                      "file":"GJet_20to40_2018.root",
+                      "treeName":"GJet_Pt_20to40_DoubleEMEnriched_MGG_80toInf_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+                      "cut" : "(pho1_genType!=1 && pho2_genType!=1)"
+                   },
+                   {
+                      "file":"GJet_20toInf_2018.root",
+                      "treeName":"GJet_Pt_20toInf_DoubleEMEnriched_MGG_40to80_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+                      "cut" : "(pho1_genType!=1 && pho2_genType!=1)"
+                   },
+                   {
+                     "file":"GJet_40toInf_2018.root",
+                     "treeName":"GJet_Pt_40toInf_DoubleEMEnriched_MGG_80toInf_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+                     "cut" : "(pho1_genType!=1 && pho2_genType!=1)"
+                   }
+
+                ]
+             },
+             "Jet-Photon":{
+         "position":3,
+         "legend":"#gamma+Jets",
+         "color":"#EAAC27",
+         "files":[
+            {
+               "file":"QCD_30to40_2018.root",
+               "treeName":"QCD_Pt_30to40_DoubleEMEnriched_MGG_80toInf_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+               "cut" : "((pho1_genType == 1 && pho2_genType != 1) || (pho1_genType != 1 && pho2_genType == 1))"
+            },
+            {
+               "file":"QCD_30toInf_2018.root",
+               "treeName":"QCD_Pt_30toInf_DoubleEMEnriched_MGG_40to80_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+               "cut" : "((pho1_genType == 1 && pho2_genType != 1) || (pho1_genType != 1 && pho2_genType == 1))"
+            },
+            {
+               "file":"QCD_40toInf_2018.root",
+               "treeName":"QCD_Pt_40toInf_DoubleEMEnriched_MGG_80toInf_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+               "cut" : "((pho1_genType == 1 && pho2_genType != 1) || (pho1_genType != 1 && pho2_genType == 1))"
+            },
+            {
+               "file":"GJet_20to40_2018.root",
+               "treeName":"GJet_Pt_20to40_DoubleEMEnriched_MGG_80toInf_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+               "cut" : "((pho1_genType == 1 && pho2_genType != 1) || (pho1_genType != 1 && pho2_genType == 1))"
+            },
+            {
+               "file":"GJet_20toInf_2018.root",
+               "treeName":"GJet_Pt_20toInf_DoubleEMEnriched_MGG_40to80_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+               "cut" : "((pho1_genType == 1 && pho2_genType != 1) || (pho1_genType != 1 && pho2_genType == 1))"
+            },
+            {
+              "file":"GJet_40toInf_2018.root",
+              "treeName":"GJet_Pt_40toInf_DoubleEMEnriched_MGG_80toInf_TuneCP5_13TeV_Pythia8_13TeV_H4GTag_0",
+              "cut" : "((pho1_genType == 1 && pho2_genType != 1) || (pho1_genType != 1 && pho2_genType == 1))"
+            }
+
+         ]
+      },
+      "DiPhoJets":{
+         "position":2,
+         "legend":"#gamma#gamma+Jets",
+         "color":"#D0F1D8",
+         "files":[
+            {
+               "file":"DiPho_40to80_2018.root",
+               "treeName":"DiPhotonJetsBox_M40_80_Sherpa_13TeV_H4GTag_0",
+                "cut" : "1>0"
+            },
+            {
+               "file":"DiPho_80toInf_2018.root",
+               "treeName":"DiPhotonJetsBox_MGG_80toInf_13TeV_Sherpa_13TeV_H4GTag_0",
+               "cut" : "1>0"
+            }
+         ]
+      }
+   }
+   }
