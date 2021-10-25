@@ -44,6 +44,8 @@ Data samples (2017): /eos/user/t/twamorka/h4g_fullRun2/withSystematics/2017/hadd
 Data samples (2018): /eos/user/t/twamorka/h4g_fullRun2/withSystematics/2018/hadd/data_2018.root
 
 Background MC samples (All 3 years): /eos/user/t/twamorka/H4G_BkgMC/
+
+Copies of these files are available here: /eos/user/t/torimoto/H4G_Limits/
 #+END_EXAMPLE
 
 ** Links to important plots
