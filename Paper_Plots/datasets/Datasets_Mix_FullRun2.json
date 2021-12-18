@@ -1,0 +1,84 @@
+{
+   "data_2016":"2016/hadd/data_2016_genMass.root",
+   "data_2017":"2017/hadd/data_2017_genMass.root",
+   "data_2018":"2018/hadd/data_2018_genMass.root",
+   "signal":[
+
+         {
+            "name":"Pseudoscalar",
+            "treeName_2016":"HAHMHToAA_AToGG_MA_60GeV_TuneCUETP8M1_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "treeName_2017":"HAHMHToAA_AToGG_MA_60GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "treeName_2018":"HAHMHToAA_AToGG_MA_60GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "legend":"m_{a} = 60 GeV",
+            "color":300,
+            "style":1,
+            "file_2016":"2016/hadd/signal_m_60_odd_genMass.root",
+            "file_2017":"2017/hadd/signal_m_60_odd_genMass.root",
+            "file_2018":"2018/hadd/signal_m_60_odd_genMass.root"
+
+         },
+         {
+            "name":"Pseudoscalar",
+            "treeName_2016":"HAHMHToAA_AToGG_MA_50GeV_TuneCUETP8M1_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "treeName_2017":"HAHMHToAA_AToGG_MA_50GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "treeName_2018":"HAHMHToAA_AToGG_MA_50GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "legend":"m_{a} = 50 GeV",
+            "color":300,
+            "style":1,
+            "file_2016":"2016/hadd/signal_m_50_odd_genMass.root",
+            "file_2017":"2017/hadd/signal_m_50_odd_genMass.root",
+            "file_2018":"2018/hadd/signal_m_50_odd_genMass.root"
+
+         },
+         {
+            "name":"Pseudoscalar",
+            "treeName_2016":"HAHMHToAA_AToGG_MA_30GeV_TuneCUETP8M1_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "treeName_2017":"HAHMHToAA_AToGG_MA_30GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "treeName_2018":"HAHMHToAA_AToGG_MA_30GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "legend":"m_{a} = 30 GeV",
+            "color":300,
+            "style":1,
+            "file_2016":"2016/hadd/signal_m_30_odd_genMass.root",
+            "file_2017":"2017/hadd/signal_m_30_odd_genMass.root",
+            "file_2018":"2018/hadd/signal_m_30_odd_genMass.root"
+
+         },
+         {
+            "name":"Pseudoscalar",
+            "treeName_2016":"HAHMHToAA_AToGG_MA_15GeV_TuneCUETP8M1_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "treeName_2017":"HAHMHToAA_AToGG_MA_15GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "treeName_2018":"HAHMHToAA_AToGG_MA_15GeV_TuneCP5_PSweights_13TeV_madgraph_pythia8_13TeV_H4GTag_0",
+            "legend":"m_{a} = 15 GeV",
+            "color":300,
+            "style":1,
+            "file_2016":"2016/hadd/signal_m_15_odd_genMass.root",
+            "file_2017":"2017/hadd/signal_m_15_odd_genMass.root",
+            "file_2018":"2018/hadd/signal_m_15_odd_genMass.root"
+
+         }
+
+
+
+   ],
+
+     "background":{
+       "Mixed Photons":{
+          "position":1,
+          "legend":"Event Mixing",
+          "color":"#2B74BA",
+          "style":1,
+          "files":[
+             {
+                "file_2016":"data_mix_2016_kinWeight_odd_genMass.root",
+                "treeName_2016":"Data_13TeV_H4GTag_0",
+                "file_2017":"data_mix_2017_kinWeight_odd_genMass.root",
+                "treeName_2017":"Data_13TeV_H4GTag_0",
+                "file_2018":"data_mix_2018_kinWeight_odd_genMass.root",
+                "treeName_2018":"Data_13TeV_H4GTag_0",
+                "cut":"1>0"
+             }
+
+          ]
+       }
+     }
+     }
