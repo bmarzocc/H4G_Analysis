@@ -5,6 +5,8 @@ import shutil
 from configs import *
 import resource
 
+gROOT.SetBatch()
+
 gStyle.SetOptStat(0)
 TGaxis.SetMaxDigits(3)
 
@@ -26,7 +28,8 @@ NiceTangerine = '#FF8000'
 cNiceBlue = TColor.GetColor('#51A7F9')
 cNiceBlueDark = TColor.GetColor('#2175E0')
 cNiceGreen = TColor.GetColor('#6FBF41')
-cNiceGreen2 = TColor.GetColor(NiceGreen2)
+#cNiceGreen2 = TColor.GetColor(NiceGreen2)
+cNiceGreen2 = 415
 cNiceGreenDark = TColor.GetColor('#008040')
 cNiceYellow = TColor.GetColor('#FBE12A')
 cNiceYellow2 = TColor.GetColor(NiceYellow2)
@@ -335,8 +338,10 @@ for plot in plots:
         thisHist_2016 = modelHist.Clone(thisName_2016)
         thisHist_2017 = modelHist.Clone(thisName_2017)
         thisHist_2018 = modelHist.Clone(thisName_2018)
-        thisHist.SetLineColor(TColor.GetColor(datasets["background"][background]["color"]))
-        thisHist.SetFillColor(TColor.GetColor(datasets["background"][background]["color"]))
+        #thisHist.SetLineColor(TColor.GetColor(datasets["background"][background]["color"]))
+        #thisHist.SetFillColor(TColor.GetColor(datasets["background"][background]["color"]))
+        thisHist.SetLineColor(866)
+        thisHist.SetFillColor(866)
         if (year == 1):
 
             for i,fi in enumerate(datasets["background"][background]["files"]):
@@ -405,18 +410,25 @@ for plot in plots:
                     locHist_2016.Add(locHist_2017)
                     locHist_2016.Add(locHist_2018)
                     print locHist_2016.Integral()
+                    for bin in range(1,locHist_2016.GetNbinsX()+1 ):
+                        locHist_2016.SetBinError(bin,sqrt(locHist_2016.GetBinContent(bin))) 
                     #print "2016 scale:", data_integral_2016/locHist_2016.Integral()
                     #print "2017 scale:", data_integral_2017/locHist_2017.Integral()
                     #print "2018 scale:", data_integral_2018/locHist_2018.Integral()
                     # print locHist_2016.Integral()
                     locHist_DataMix = locHist_2016.Clone('h_bdt')
+                    locHist_DataMix.Sumw2() 
                     #locHist_DataMix.SaveAs(SignalLocation+'BDT_DataMix_SB.root')
 
                     #locHist_DataMix.SaveAs(SignalLocation+'Hist_DataMix_m0p9_'+str(nbin)+'Bins.root')
+                       
                 elif (Norm == 'Lumi'):
                     # locHist_2016.Scale(35.9/locHist_2016.Integral())
                     # locHist_2017.Scale(41.5/locHist_2017.Integral())
                     # locHist_2018.Scale(54.38/locHist_2018.Integral())
+                    locHist_2016.Sumw2()
+                    locHist_2017.Sumw2()
+                    locHist_2018.Sumw2() 
                     locHist_2016.Scale(35.9)
                     locHist_2017.Scale(41.5)
                     locHist_2018.Scale(54.38)
@@ -425,6 +437,9 @@ for plot in plots:
                     # locHist_2016.Scale(data_integral_run2/locHist_2016.Integral())
 
                 elif (Norm == 'Total'):
+                    locHist_2016.Sumw2()
+                    locHist_2017.Sumw2()
+                    locHist_2018.Sumw2() 
                     locHist_2016.Add(locHist_2017)
                     locHist_2016.Add(locHist_2018)
                     locHist_2016.Scale(data_integral_run2/locHist_2016.Integral())
