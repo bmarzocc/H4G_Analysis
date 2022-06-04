@@ -53,13 +53,17 @@ def getRatio(hist1, hist2):
 		b2sq = b2*b2
 
 		e1sq_up = hist1.GetBinErrorUp(Bin)*hist1.GetBinErrorUp(Bin)
-		e2sq_up = hist2.GetBinErrorUp(Bin)*hist2.GetBinErrorUp(Bin)
+		#e2sq_up = hist2.GetBinErrorUp(Bin)*hist2.GetBinErrorUp(Bin)
+                e2sq_up = 0.
 
 		e1sq_low = hist1.GetBinErrorLow(Bin)*hist1.GetBinErrorLow(Bin)
-		e2sq_low = hist2.GetBinErrorLow(Bin)*hist2.GetBinErrorLow(Bin)
+		#e2sq_low = hist2.GetBinErrorLow(Bin)*hist2.GetBinErrorLow(Bin)
+                e2sq_low = 0.
 
-		error_up = sqrt((e1sq_up * b2sq + e2sq_up * b1sq) / (b2sq * b2sq))
-		error_low = sqrt((e1sq_low * b2sq + e2sq_low * b1sq) / (b2sq * b2sq))
+		#error_up = sqrt((e1sq_up * b2sq + e2sq_up * b1sq) / (b2sq * b2sq))
+		#error_low = sqrt((e1sq_low * b2sq + e2sq_low * b1sq) / (b2sq * b2sq))
+                error_up = 0.
+		error_low = 0.
 
 		graph.SetPoint(npoint, hist1.GetBinCenter(Bin), ratio)
 		graph.SetPointError(npoint, 0, 0, error_low, error_up)
@@ -162,6 +166,11 @@ def doPull(bkg, data, stack):
 			cont = thisStack.GetStack().Last().GetBinContent(x+1)
 			erro = (cont+err)/cont - 1
 #			erro = stack.GetStack().Last().GetBinError(x+1)
+                        d = data.GetBinContent(x+1)
+                        b = bkg.GetBinContent(x+1)
+                        sd = sqrt(data.GetBinContent(x+1))
+                        sb = sqrt(bkg.GetBinContent(x+1))
+                        erro = sqrt(sb*sb/(d*d) + sd*sd*b*b/(d*d*d*d))
 			py.append(sigma)
 			pe.append(erro)
 			#print "bin center:", bin_center, "bin width",bWidth, "n data:",n_data, "nbkg:",n_bkg, "sigma:",sigma, "erro:",erro
